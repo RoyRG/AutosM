@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -14,9 +14,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\API.Data\API.Data.csproj" />
-    <ProjectReference Include="..\API.Servicios\API.Servicios.csproj" />
+    <ProjectReference Include="..\API.Entidades\API.Entidades.csproj" />
+    <ProjectReference Include="..\API.Modelos\API.Comun.csproj" />
+    <ProjectReference Include="..\API.Negocio\API.Negocio.csproj" />
   </ItemGroup>
-
 
 </Project>

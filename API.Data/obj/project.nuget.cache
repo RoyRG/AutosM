@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yt/9k2vMA9n06yD1zGYxgkH26648qKeUzvdpDDJcM8IiO5Aj7eaKu9kOJ+ugLD7XO99hFNs601lwEO7yOZ+ffg==",
+  "dgSpecHash": "7kcZFHinfciyEjV8pqfnDnZab8V7t5ZqYPMlwfhcOPvzEGY76m0EpvXqswvNkscnpcZ7yQw+xqnV9zZLXKbKVg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\QUALITY\\Desktop\\API.Autos\\API.Autos\\API.Autos.csproj",
+  "projectFilePath": "C:\\Users\\QUALITY\\Desktop\\API.Autos\\API.Data\\API.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\QUALITY\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\QUALITY\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
