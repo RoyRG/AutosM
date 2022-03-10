@@ -32,8 +32,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\QUALITY\\Desktop\\API.Autos\\API.Data\\API.Data.csproj": {
-                "projectPath": "C:\\Users\\QUALITY\\Desktop\\API.Autos\\API.Data\\API.Data.csproj"
+              "C:\\Users\\QUALITY\\Desktop\\API.Autos\\API.Entidades\\API.Entidades.csproj": {
+                "projectPath": "C:\\Users\\QUALITY\\Desktop\\API.Autos\\API.Entidades\\API.Entidades.csproj"
+              },
+              "C:\\Users\\QUALITY\\Desktop\\API.Autos\\API.Negocio\\API.Negocio.csproj": {
+                "projectPath": "C:\\Users\\QUALITY\\Desktop\\API.Autos\\API.Negocio\\API.Negocio.csproj"
               },
               "C:\\Users\\QUALITY\\Desktop\\API.Autos\\API.Servicios\\API.Servicios.csproj": {
                 "projectPath": "C:\\Users\\QUALITY\\Desktop\\API.Autos\\API.Servicios\\API.Servicios.csproj"
@@ -148,6 +151,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.15, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [

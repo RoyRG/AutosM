@@ -1,0 +1,10 @@
+C:\Users\QUALITY\Desktop\API.Autos\API.Modelos\bin\Debug\netcoreapp3.1\API.Comun.deps.json
+C:\Users\QUALITY\Desktop\API.Autos\API.Modelos\bin\Debug\netcoreapp3.1\API.Comun.dll
+C:\Users\QUALITY\Desktop\API.Autos\API.Modelos\bin\Debug\netcoreapp3.1\API.Comun.pdb
+C:\Users\QUALITY\Desktop\API.Autos\API.Modelos\obj\Debug\netcoreapp3.1\API.Comun.csproj.AssemblyReference.cache
+C:\Users\QUALITY\Desktop\API.Autos\API.Modelos\obj\Debug\netcoreapp3.1\API.Comun.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\QUALITY\Desktop\API.Autos\API.Modelos\obj\Debug\netcoreapp3.1\API.Comun.AssemblyInfoInputs.cache
+C:\Users\QUALITY\Desktop\API.Autos\API.Modelos\obj\Debug\netcoreapp3.1\API.Comun.AssemblyInfo.cs
+C:\Users\QUALITY\Desktop\API.Autos\API.Modelos\obj\Debug\netcoreapp3.1\API.Comun.csproj.CoreCompileInputs.cache
+C:\Users\QUALITY\Desktop\API.Autos\API.Modelos\obj\Debug\netcoreapp3.1\API.Comun.dll
+C:\Users\QUALITY\Desktop\API.Autos\API.Modelos\obj\Debug\netcoreapp3.1\API.Comun.pdb

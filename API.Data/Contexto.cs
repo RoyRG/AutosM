@@ -22,6 +22,14 @@ namespace API.Data
         {
             _configuration = configuration;
         }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            var builder = new ConfigurationBuilder();
+            builder.AddJsonFile("appsettings.json", optional: false);
+            _configuration = builder.Build();
+            string connectionString = _configuration.GetConnectionString("DefaultConnection").ToString();
+            optionsBuilder.UseSqlServer(connectionString);
+        }
 
     }
 }
