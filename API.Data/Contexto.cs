@@ -33,24 +33,24 @@ namespace API.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
-            //modelBuilder.Entity<Autos>().HasKey(k => k.Id_Auto);
-            //modelBuilder.Entity<Estado>().HasKey(k => k.Id_Estado);
-            //modelBuilder.Entity<Lote>().HasKey(k => k.Id_Lote);
+            modelBuilder.Entity<Autos>().HasKey(k => k.Id);
+            modelBuilder.Entity<Estado>().HasKey(k => k.Id);
+            modelBuilder.Entity<Lote>().HasKey(k => k.Id);
             modelBuilder.Entity<Marca>().HasKey(k => k.Id);
             modelBuilder.Entity<Modelo>().HasKey(k => k.Id);
 
-            //modelBuilder.Entity<Autos>()
-            //.HasOne(d => d.Modelo)
-            //.WithOne()
-            //.HasForeignKey<Autos>(c => new { c.Id_Modelo });
-            //modelBuilder.Entity<Autos>()
-            //.HasOne(d => d.Estado)
-            //.WithOne()
-            //.HasForeignKey<Autos>(c => new { c.Id_Estado });
-            //modelBuilder.Entity<Autos>()
-            //.HasOne(d => d.Lote)
-            //.WithOne()
-            //.HasForeignKey<Autos>(c => new { c.Id_Lote });
+            modelBuilder.Entity<Autos>()
+            .HasOne(d => d.Modelo)
+            .WithOne()
+            .HasForeignKey<Autos>(c => new { c.Id_Modelo });
+            modelBuilder.Entity<Autos>()
+            .HasOne(d => d.Estado)
+            .WithOne()
+            .HasForeignKey<Autos>(c => new { c.Id_Estado });
+            modelBuilder.Entity<Autos>()
+            .HasOne(d => d.Lote)
+            .WithOne()
+            .HasForeignKey<Autos>(c => new { c.Id_Lote });
             modelBuilder.Entity<Modelo>()
             .HasOne(d => d.Marca)
             .WithOne()
