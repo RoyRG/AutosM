@@ -7,11 +7,11 @@ namespace API.Data
 {
     public static class Kernel
     {
-        private static IConfiguration _configuration;
+        //private static IConfiguration _configuration;
         //const string cadenaConexion = @" Data Source=DESKTOP-EIGQN0C; Initial Catalog=AutosFirstCode; User ID=sa; Password=royale681018";
-        public static IServiceCollection RegistrarRepositorios<TContexto>(this IServiceCollection services) where TContexto : DbContext
+        public static IServiceCollection RegistrarRepositorios<TContexto>(this IServiceCollection services, IConfiguration configuration) where TContexto : DbContext
         {
-            services.AddDbContext<Contexto>(options => options.UseSqlServer(_configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<Contexto>(options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
             return services;
         }
     }

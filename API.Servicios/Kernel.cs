@@ -11,6 +11,7 @@ namespace API.Servicios
     {
         public static IServiceCollection RegistrarServicios(this IServiceCollection services, IConfiguration configuration)
         {
+            
             services.AddTransient<IServicioLote, ServicioLote>();
             services.AddTransient<IServicioCarro, ServicioCarro>();
             services.AddTransient<IServicioEstado, ServicioEstado>();

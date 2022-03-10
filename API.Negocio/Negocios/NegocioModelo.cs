@@ -26,7 +26,7 @@ namespace API.Negocio.Negocios
 
         public List<Modelo> Get()
         {
-            var rModelo = _db.Modelos.Include(i => i.Marca).Where(c => c.Activo == true && c.Marca.Activo == true)
+            var rModelo = _db.Modelos.Include(i => i.Marca)/*.Where(c => c.Activo == true && c.Marca.Activo == true)*/
                .Select(s => new Modelo { Id = s.Id, Id_Marca = s.Id_Marca, Nombre = s.Nombre, Marca = new Marca { Nombre = s.Marca.Nombre } })
                .ToList();
             return rModelo;

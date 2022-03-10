@@ -16,7 +16,7 @@ namespace API.Negocio
             services.AddTransient<INegocioEstado, NegocioEstado>();
             services.AddTransient<INegocioMarca, NegocioMarca>();
             services.AddTransient<INegocioModelo, NegocioModelo>();
-            services.RegistrarRepositorios<Contexto>();
+            services.RegistrarRepositorios<Contexto>(configuration);
             return services;
         }
     }
