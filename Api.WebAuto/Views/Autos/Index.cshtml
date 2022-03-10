@@ -1,0 +1,117 @@
+﻿@{
+    ViewData["Title"] = "Autos";
+}
+<h1 class ="text-center">Autos</h1>
+<body onload="Obtener()"></body>
+<table class="table text-center" >
+    <thead>
+        <tr>
+            @*<th scope="col" id="id">Id</th>*@
+            <th scope="col">Modelo</th>
+            <th scope="col">Estado</th>
+            <th scope="col">Lote</th>
+            <th scope="col">Actualizar</th>
+            <th scope="col">Eliminar</th>
+        </tr>
+    </thead>
+    <tbody  id="tblAutos">
+    </tbody>
+</table>
+<div>
+    <button type="button" class="editar edit-modal btn btn-success form-control" data-target= "#agrega" data-toggle="modal" onclick="CargaCombosAgrega()">Agregar</button>
+</div>
+<div class="modal" id="imodal"  tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title col-11 text-center">Modificar Autos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="location.reload()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+            <div class="form-group">
+                    <label>Modelo</label>
+                   <select class="form-control" id="cmbModelo"></select>
+                    </div>
+                 <div class="form-group">
+                    <label>Estado</label>
+                   <select class="form-control" id="cmbEstado"></select>
+                    </div>
+                     <div class="form-group">
+                    <label>Lote</label>
+                   <select class="form-control" id="cmbLote"></select>
+                    </div>
+    <div>
+        <input type="date" id="start" name="trip-start" class="form-control" data-date-format="YYYY-MM-DD">
+</div>
+      </div>
+      <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-success btnModifica" data-dismiss="modal" onclick="Modificar()">Modificar</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="location.reload()">Cerrar</button>
+      </div>
+    
+  </div>
+</div>
+</div>
+@*Aqui empieza el codigo nuevo*@
+<div class="modal" id="agrega"  tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title col-11 text-center">Agregar Auto</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="location.reload()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+  <div class="modal-body">
+       <div class="form-group">
+                   <div class="form-group">
+                    <label>Modelo</label>
+                   <select class="form-control" id="cmbModeloA"></select>
+                    </div>
+                 <div class="form-group">
+                    <label>Estado</label>
+                   <select class="form-control" id="cmbEstadoA"></select>
+                    </div>
+                     <div class="form-group">
+                    <label>Lote</label>
+                   <select class="form-control" id="cmbLoteA"></select>
+                    </div>
+                    <div class="form-group">
+                    <label>Fecha</label>
+                        
+                        <input type="date" id="txtFechaA" name="trip-start" class="form-control" data-date-format="YYYY-MM-DD" >
+                    </div>
+      </div>
+      <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-success" data-dismiss="modal" onclick="Agregar()">Agregar</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="location.reload()">Cerrar</button>
+      </div>
+    
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal" id="eliminar"  tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title col-11 text-center">Eliminar Auto</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="location.reload()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-footer justify-content-between">
+        <button type="button"  class="btn btn-success" data-dismiss="modal" onclick="Eliminar()">Borrar</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="location.reload()">Cerrar</button>
+      </div>
+    
+  </div>
+</div>
+</div>
+@section Scripts{
+    <script src= "~/js/Autos.js"></script>
+}
